@@ -1,0 +1,12 @@
+one:
+  id: 1
+  blog_id: 1
+  tag_id: 1
+two:
+  id: 2
+  blog_id: 1
+  tag_id: 2
+three:
+  id: 3
+  blog_id: 2
+  tag_id: 1

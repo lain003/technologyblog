@@ -1,0 +1,62 @@
+<header>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<ul class="nav pull-right">
+				<li>
+					<% if can? :create,Blog %>
+					<%= link_to 'New Blog', new_user_blog_path(params[:user_id]) %>
+					<% end %>
+				</li>
+				<li>
+					<% if can? :create,Blog %>
+					<%= link_to("import",import_new_user_blog_path(@user)) %>
+					<% end %>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<br/>
+<br/>
+<br/>
+
+<%= form_tag(user_blogs_path(@user),{:method => :get}) do %>
+<%= search_field(:search,:word) %>
+<%= submit_tag '検索' %>
+<% end %>
+
+<div id="main">
+	<%= breadcrumb %>
+	<section class="autopagerize_page_element" id="blogs">
+		<% @blogs.each do |blog| %>
+		<article class="blog" itemscope="itemscope" itemtype="http://schema.org/Article">
+			<h2><%= link_to blog.title,[@user,blog] %> </h2>
+			<div class="body">
+				<%= CGI.escapeHTML(remove_markdown(blog.content)) %><%# マークダウン記法の中のHTMLがエスケープされてなかったので %>
+			</div>
+
+			<div class="date" id="created_at">
+				<%= "created_at : " + date_to_s(blog.created_at) %>
+			</div>
+			<div class="date" id="updated_at">
+				<%= "updated_at : " + date_to_s(blog.updated_at) %>
+			</div>
+			<% if can? :edit,blog %>
+			<%= link_to 'Edit', edit_user_blog_path(params[:user_id],blog) %>
+			<% end %>
+			<% if can? :delete,blog %>
+			<%= link_to 'Destroy', user_blog_path(params[:user_id],blog), method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
+		</article>
+		<% end %>
+
+		<br />
+		<%= paginate @blogs %>
+	</section>
+
+	<aside id="sidebar">
+		<%= render 'calendar',:calendar => @blogsize_calendar %>
+		<%= render 'tagslist',:tags_list => @tags_list %>
+	</aside>
+</div>

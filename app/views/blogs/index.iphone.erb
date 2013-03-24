@@ -1,0 +1,26 @@
+<div data-role="page" id="blogs">
+	<div data-role="content">
+		<select>
+			<option>日付を指定して検索</option>
+			<% @blogsize_calendar.each_key do |year| %>
+			<% @blogsize_calendar[year].each_key do |month| %>
+			<% if @blogsize_calendar[year][month] != 0 %>
+			<option value="<%= "blogs?search[date]=" + year.to_s+"/"+month.to_s %>"><%= year.to_s+"/"+month.to_s %></option>
+			<% end %>
+			<% end %>
+			<% end %>
+		</select>
+
+		<select>
+			<option>タグを指定して検索</option>
+			<% @tags_list.each_key do |key| %>
+			<option value="<%= "blogs?search[tag]=" + key %>"><%= key %></option>
+			<% end %>
+		</select>
+		
+		<ul id="items" data-role="listview" data-inset="true" data-theme="c">
+		</ul>
+	</div>
+</div>
+
+<%= javascript_include_tag "mobile/blog/index.js" %>

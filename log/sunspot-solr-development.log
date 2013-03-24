@@ -1,0 +1,285 @@
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: JNDI not configured for solr (NoInitialContextEx)
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: using system property solr.solr.home: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader <init>
+î•ñ: new SolrResourceLoader for deduced Solr Home: '/Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/'
+2013/03/21 16:30:18 org.apache.solr.servlet.SolrDispatchFilter init
+î•ñ: SolrDispatchFilter.init()
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: JNDI not configured for solr (NoInitialContextEx)
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: using system property solr.solr.home: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr
+2013/03/21 16:30:18 org.apache.solr.core.CoreContainer$Initializer initialize
+î•ñ: looking for solr.xml: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/solr.xml
+2013/03/21 16:30:18 org.apache.solr.core.CoreContainer$Initializer initialize
+î•ñ: no solr.xml file found - using default
+2013/03/21 16:30:18 org.apache.solr.core.CoreContainer load
+î•ñ: Loading CoreContainer using Solr Home: '/Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/'
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader <init>
+î•ñ: new SolrResourceLoader for directory: '/Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/'
+2013/03/21 16:30:18 org.apache.solr.core.CoreContainer create
+î•ñ: Creating SolrCore '' using instanceDir: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/.
+2013/03/21 16:30:18 org.apache.solr.core.SolrResourceLoader <init>
+î•ñ: new SolrResourceLoader for directory: '/Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/./'
+2013/03/21 16:30:18 org.apache.solr.core.SolrConfig initLibs
+î•ñ: Adding specified lib dirs to ClassLoader
+2013/03/21 16:30:18 org.apache.solr.core.SolrConfig <init>
+î•ñ: Using Lucene MatchVersion: LUCENE_36
+2013/03/21 16:30:19 org.apache.solr.core.SolrConfig <init>
+î•ñ: Loaded SolrConfig: solrconfig.xml
+2013/03/21 16:30:19 org.apache.solr.schema.IndexSchema readSchema
+î•ñ: Reading Solr Schema
+2013/03/21 16:30:19 org.apache.solr.schema.IndexSchema readSchema
+î•ñ: Schema name=sunspot
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created string: org.apache.solr.schema.StrField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created tdouble: org.apache.solr.schema.TrieDoubleField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created rand: org.apache.solr.schema.RandomSortField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.JapaneseTokenizerFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.JapaneseBaseFormFilterFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.CJKWidthFilterFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.StopFilterFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.JapaneseKatakanaStemFilterFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created : org.apache.solr.analysis.LowerCaseFilterFactory
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created text: org.apache.solr.schema.TextField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created boolean: org.apache.solr.schema.BoolField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created date: org.apache.solr.schema.DateField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created sdouble: org.apache.solr.schema.SortableDoubleField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created sfloat: org.apache.solr.schema.SortableFloatField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created sint: org.apache.solr.schema.SortableIntField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created slong: org.apache.solr.schema.SortableLongField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created tint: org.apache.solr.schema.TrieIntField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created tfloat: org.apache.solr.schema.TrieFloatField
+2013/03/21 16:30:19 org.apache.solr.util.plugin.AbstractPluginLoader load
+î•ñ: created tdate: org.apache.solr.schema.TrieDateField
+2013/03/21 16:30:19 org.apache.solr.schema.IndexSchema readSchema
+î•ñ: default search field in schema is text
+2013/03/21 16:30:19 org.apache.solr.schema.IndexSchema readSchema
+î•ñ: query parser default operator is AND
+2013/03/21 16:30:19 org.apache.solr.schema.IndexSchema readSchema
+î•ñ: unique key field: id
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore <init>
+î•ñ: [] Opening new SolrCore at /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/./, dataDir=/Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/data/development/
+2013/03/21 16:30:19 org.apache.solr.core.JmxMonitoredMap <init>
+î•ñ: No JMX servers found, not exposing Solr information with JMX.
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initListeners
+î•ñ: [] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initListeners
+î•ñ: [] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initWriters
+î•ñ: created json: solr.JSONResponseWriter
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initWriters
+î•ñ: adding lazy queryResponseWriter: solr.VelocityResponseWriter
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initWriters
+î•ñ: created velocity: solr.VelocityResponseWriter
+2013/03/21 16:30:19 org.apache.solr.core.SolrCore initWriters
+î•ñ: created xslt: solr.XSLTResponseWriter
+2013/03/21 16:30:19 org.apache.solr.response.XSLTResponseWriter init
+î•ñ: xsltCacheLifetimeSeconds=5
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /select: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /browse: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update: solr.XmlUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update/javabin: solr.BinaryUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.CSVRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update/csv: solr.CSVRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.JsonUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update/json: solr.JsonUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update/extract: solr.extraction.ExtractingRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.XsltUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /update/xslt: solr.XsltUpdateRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /analysis/field: solr.FieldAnalysisRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /analysis/document: solr.DocumentAnalysisRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /admin/: solr.admin.AdminHandlers
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /admin/ping: solr.PingRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /debug/dump: solr.DumpRequestHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /mlt: org.apache.solr.handler.MoreLikeThisHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /spell: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /tvrh: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /terms: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: adding lazy requestHandler: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.core.RequestHandlers initHandlersFromConfig
+î•ñ: created /elevate: solr.SearchHandler
+2013/03/21 16:30:19 org.apache.solr.search.SolrIndexSearcher <init>
+î•ñ: Opening Searcher@27e32382 main
+2013/03/21 16:30:19 org.apache.solr.update.CommitTracker <init>
+î•ñ: commitTracker AutoCommit: disabled
+2013/03/21 16:30:19 org.apache.solr.handler.component.SpellCheckComponent inform
+î•ñ: Initializing spell checkers
+2013/03/21 16:30:19 org.apache.solr.handler.component.SpellCheckComponent inform
+î•ñ: No queryConverter defined, using default converter
+2013/03/21 16:30:19 org.apache.solr.handler.component.QueryElevationComponent inform
+î•ñ: Loading QueryElevation from: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr/./conf/elevate.xml
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.QueryComponent@5d59054d
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.FacetComponent@7f6b321b
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@56a6cbf7
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.HighlightComponent@6098f192
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.StatsComponent@591bd9c9
+2013/03/21 16:30:19 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  debug component:org.apache.solr.handler.component.DebugComponent@337748d3
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting socketTimeout to: 0
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting urlScheme to: http://
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting connTimeout to: 0
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maxConnectionsPerHost to: 20
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting corePoolSize to: 0
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maximumPoolSize to: 2147483647
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maxThreadIdleTime to: 5
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting sizeOfQueue to: -1
+2013/03/21 16:30:19 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting fairnessPolicy to: false
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.QueryComponent@5d59054d
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.FacetComponent@7f6b321b
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.MoreLikeThisComponent@56a6cbf7
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.HighlightComponent@6098f192
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.StatsComponent@591bd9c9
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  component:org.apache.solr.handler.component.SpellCheckComponent@6361f39e
+2013/03/21 16:30:20 org.apache.solr.handler.component.SearchHandler inform
+î•ñ: Adding  debug component:org.apache.solr.handler.component.DebugComponent@337748d3
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting socketTimeout to: 0
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting urlScheme to: http://
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting connTimeout to: 0
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maxConnectionsPerHost to: 20
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting corePoolSize to: 0
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maximumPoolSize to: 2147483647
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting maxThreadIdleTime to: 5
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting sizeOfQueue to: -1
+2013/03/21 16:30:20 org.apache.solr.handler.component.HttpShardHandlerFactory getParameter
+î•ñ: Setting fairnessPolicy to: false
+2013/03/21 16:30:20 org.apache.solr.core.QuerySenderListener newSearcher
+î•ñ: QuerySenderListener sending requests to Searcher@27e32382 main
+2013/03/21 16:30:20 org.apache.solr.core.CoreContainer register
+î•ñ: registering core: 
+2013/03/21 16:30:20 org.apache.solr.servlet.SolrDispatchFilter init
+î•ñ: user.dir=/Users/akitani/.rvm/gems/ruby-1.9.3-p194/gems/sunspot_solr-1.3.3/solr
+2013/03/21 16:30:20 org.apache.solr.servlet.SolrDispatchFilter init
+î•ñ: SolrDispatchFilter.init() done
+2013/03/21 16:30:20 org.apache.solr.core.SolrCore execute
+î•ñ: [] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml} hits=0 status=0 QTime=88 
+2013/03/21 16:30:20 org.apache.solr.core.QuerySenderListener newSearcher
+î•ñ: QuerySenderListener done.
+2013/03/21 16:30:20 org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener newSearcher
+î•ñ: Loading spell index for spellchecker: default
+2013/03/21 16:30:20 org.apache.solr.core.SolrCore registerSearcher
+î•ñ: [] Registered new searcher Searcher@27e32382 main
+2013/03/21 16:30:20 org.apache.solr.servlet.SolrServlet init
+î•ñ: SolrServlet.init()
+2013/03/21 16:30:20 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: JNDI not configured for solr (NoInitialContextEx)
+2013/03/21 16:30:20 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: using system property solr.solr.home: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr
+2013/03/21 16:30:20 org.apache.solr.servlet.SolrServlet init
+î•ñ: SolrServlet.init() done
+2013/03/21 16:30:20 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: JNDI not configured for solr (NoInitialContextEx)
+2013/03/21 16:30:20 org.apache.solr.core.SolrResourceLoader locateSolrHome
+î•ñ: using system property solr.solr.home: /Users/akitani/Dropbox/RailsProject/TechnologyBlog/solr
+2013/03/21 16:30:20 org.apache.solr.servlet.SolrUpdateServlet init
+î•ñ: SolrUpdateServlet.init() done
+2013/03/21 16:30:21 org.apache.solr.common.SolrException log
+’v–½“I: org.apache.solr.common.SolrException: Missing required parameter: mlt.fl
+	at org.apache.solr.common.params.RequiredSolrParams.get(RequiredSolrParams.java:49)
+	at org.apache.solr.handler.MoreLikeThisHandler$MoreLikeThisHelper.<init>(MoreLikeThisHandler.java:256)
+	at org.apache.solr.handler.MoreLikeThisHandler.handleRequestBody(MoreLikeThisHandler.java:86)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:129)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1376)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:365)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:260)
+	at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1212)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:399)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:182)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:766)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:450)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+	at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+	at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+	at org.mortbay.jetty.Server.handle(Server.java:326)
+	at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:542)
+	at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:928)
+	at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:549)
+	at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+	at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+	at org.mortbay.jetty.bio.SocketConnector$Connection.run(SocketConnector.java:228)
+	at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:582)
+
+2013/03/21 16:30:21 org.apache.solr.core.SolrCore execute
+î•ñ: [] webapp=/solr path=/mlt params={} status=400 QTime=7 
+2013/03/21 16:31:13 org.apache.solr.core.SolrCore execute
+î•ñ: [] webapp=/solr path=/mlt params={mlt.fl=content_textv,tags_textv,title_textv&start=0&q=id:Blog\+190&wt=ruby&fq=type:Blog&rows=30} status=0 QTime=365 

@@ -1,0 +1,13 @@
+#<User id: nil, created_at: nil, updated_at: nil, provider: nil, uid: nil, name: nil, email: "", encrypted_password: "", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, fb_user_id: nil>
+one:
+  id: 1
+  name: "test_name"
+  email: "test_email@gmail.com"
+  encrypted_password: ""
+  fb_user_id: 100000000000000
+two:
+  id: 2
+  name: "test2_name"
+  email: "test2_email@gmail.com"
+  encrypted_password: ""
+  fb_user_id: 200000000000000

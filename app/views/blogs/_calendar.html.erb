@@ -1,0 +1,14 @@
+<article class="calendar">
+	<h2>月刊アーカイブ</h2>
+	<% calendar.each_key do |year| %>
+	<div class="year">
+		<% calendar[year].each_key do |month| %>
+		<div class="month">
+			<% if calendar[year][month] != 0%>
+			<%= link_to  year.to_s+"/"+month.to_s+"  ("+calendar[year][month].to_s+")",{:controller => "blogs", :action => "index", :search=>{:date=>year.to_s+"/"+month.to_s}} %>
+			<% end %>
+		</div>
+		<% end %>
+	</div>
+	<% end %>
+</article>

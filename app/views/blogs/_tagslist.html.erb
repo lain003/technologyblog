@@ -1,0 +1,12 @@
+<article class="tagslist">
+	<h2>タグの一覧</h2>
+	<ul class="tags">
+		<% tags_list.each_key do |key| %>
+
+		<li class="tag">
+			<%= link_to key, {:controller => "blogs", :action => "index", :search=>{:tag=>key}} %>
+			<%= " x "+tags_list[key].to_s %>
+		</li>
+		<% end %>
+	</ul>
+</article>

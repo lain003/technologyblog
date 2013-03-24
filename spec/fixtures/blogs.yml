@@ -1,0 +1,30 @@
+#<Blog id: nil, title: nil, content: nil, created_at: nil, updated_at: nil, user_id: nil, tags: []> 
+one:
+  id: 1
+  title: "fixtures_title1"
+  content: "fixtures_content1"
+  user_id: 1
+  created_at: "2011-05-1 0:00:00"
+  updated_at: "2011-05-1 0:00:00"
+two:
+  id: 2
+  title: "railsで全文検索"
+  content: "これでtitle,contentのカラムに全文検索を行う。boostはtitleカラムに一致したものに関しては重みを5増やすという意味。"
+  user_id: 1
+  created_at: "2011-05-31 23:59:59"
+  updated_at: "2011-05-31 23:59:59"
+three:
+  id: 3
+  title: "activerecordのsaveでTimestanpを更新しない"
+  content: "saveとかかいちゃうとTimestanpが勝手に更新されてしまう。"
+  user_id: 1
+  created_at: "2011-06-1 0:00:00"
+  updated_at: "2011-06-1 0:00:00"
+  
+four:
+  id: 4
+  title: "user2_title"
+  content: "user2_content"
+  user_id: 2
+  created_at: "2011-06-1 0:00:00"
+  updated_at: "2011-06-1 0:00:00"

@@ -1,0 +1,34 @@
+<h1>Listing users</h1>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<% if user_signed_in? %>
+  Sign in as <strong><%= current_user.name %></strong>
+  |
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<% else %>
+  <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+<% end %>
+<br/>
+
+<% if user_signed_in? %>
+	<%= link_to 'アカウント削除', user_path(current_user), method: :delete  %><br/>
+<% end%>
+
+<table>
+  <tr>
+  </tr>
+
+  <% @users.each do |user| %>
+  	<tr>
+  	  <%= user.name %>
+  	</tr>
+    <tr>
+    	<%= link_to "ユーザが投稿したブログ",user_blogs_path(user) %>
+    </tr>
+    <br/>
+  <% end %>
+</table>
+
+<br />

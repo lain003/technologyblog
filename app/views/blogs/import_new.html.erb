@@ -1,0 +1,8 @@
+<%= form_tag(import_user_blog_path(@user), {:multipart => true})  do %>
+
+  <%= label_tag 'JSON取り込み' %><br />
+  <%= file_field_tag "file" %><br />
+  
+  <%= submit_tag "submit" %>
+
+<% end %> 

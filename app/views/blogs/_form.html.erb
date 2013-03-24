@@ -1,0 +1,49 @@
+<%= form_for [@user,@blog] do |f| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+      <ul>
+      <% @blog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content,:size=>"140x20"%>
+  </div>
+
+  <div class="field">
+  	<%= text_field :tags,:tag,:value => tags_to_s(@blog.tags),:autocomplete => "off" %>
+	<div id="suggest" style="display:none;"></div>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<script>
+function startSuggest() {
+	array = new Array();
+	<% @tags.each do |tag| %>
+		array.push("<%= tag.tag %>");
+	<% end %>
+  new Suggest.LocalMulti(
+        "tags_tag",    // 入力のエレメントID
+        "suggest", // 補完候補を表示するエリアのID
+        array,      // 補完候補の検索対象となる配列
+        {dispMax: 10, prefix: true}); // オプション
+}
+
+window.addEventListener ?
+  window.addEventListener('load', startSuggest, false) :
+  window.attachEvent('onload', startSuggest);
+</script>

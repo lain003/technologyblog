@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
+		<link type="text/plain" rel="author" href="/humans.txt" />
+
+		<%= csrf_meta_tags %>
+		<% if @blog %>
+		<title><%= @blog.title %></title>
+		<meta content="<%= truncate(@blog.content, :length => 100) %>">
+		<% else %>
+		<title>技術ブログ</title>
+		<meta content="自作の技術ブログです。FaceBookアカウントを持っているなら、一応利用できます。">
+		<% end %>
+	</head>
+	<body>
+		<div class="container1" id="wrapper">
+			<%= yield %>
+			<a href="//plus.google.com/115206401000651026077" rel="author" style="text-decoration:none;"> 
+				<img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/> 
+			</a>
+		</div>
+	</body>
+</html>
